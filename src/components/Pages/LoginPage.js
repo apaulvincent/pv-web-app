@@ -1,9 +1,11 @@
 import React, {Component}from 'react';
 import { Link } from 'react-router-dom'
-import LoginForm from './LoginForm';
+import LoginForm from '../Forms/LoginForm';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-import {actions} from '../actions/auth'
+
+import { login } from '../../actions/auth';
+
 
 class LoginPage extends Component {
 
@@ -20,7 +22,6 @@ class LoginPage extends Component {
             </div>
         )
     }
-
 }
 
 LoginPage.propTypes = {
